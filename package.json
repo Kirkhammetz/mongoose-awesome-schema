@@ -19,5 +19,9 @@
     "parser"
   ],
   "author": "Simone Corsi",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.2"
+  }
 }
