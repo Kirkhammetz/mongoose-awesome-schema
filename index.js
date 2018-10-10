@@ -84,7 +84,7 @@ module.exports = exports = function awesomeSchemaPlugin(schema, options) {
     return infoElement;
   });
 
-  let returnObj = {
+  let awesomeSchema = {
     properties: properties,
     schema: infoArray,
     referencedInCollections: []
@@ -118,7 +118,13 @@ module.exports = exports = function awesomeSchemaPlugin(schema, options) {
         console.log(error);
       }
     });
-    returnObj.referencedInCollections = references;
+    awesomeSchema.referencedInCollections = references;
   }
-  console.log(returnObj);
+
+  if (typeof options.transform "function" ) {
+    options.transform(awesomeSchema, schema, model)
+  }
+
+  schema.info = () => awesomeSchema;
+  model.info = () => awesomeSchema;
 };
