@@ -1,0 +1,23 @@
+{
+  "name": "mongoose-awesome-schema",
+  "version": "0.0.1",
+  "description": "Mongoose plugin that parse schema options into a nice human readable json format to be used in frontends for a smoother development of pairing systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "plugin",
+    "es6",
+    "mongodb",
+    "schema",
+    "awesome",
+    "nice",
+    "nodejs",
+    "schema",
+    "parser"
+  ],
+  "author": "Simone Corsi",
+  "license": "MIT"
+}
