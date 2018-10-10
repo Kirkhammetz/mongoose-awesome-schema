@@ -23,5 +23,9 @@
   "peerDependencies": {
     "lodash": "^4.17.11",
     "mongoose": "^5.3.2"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.2"
   }
 }
